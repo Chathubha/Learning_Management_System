@@ -1,0 +1,45 @@
+{
+  "name": "maths-academy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b",
+    "lint": "eslint .",
+    "test": "vitest run tests/rules.test.ts tests/demo.test.ts tests/config.test.ts",
+    "test:db": "node --test tests/database.test.mjs",
+    "test:concurrency": "node --test tests/concurrency.test.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "3.10.0",
+    "@supabase/supabase-js": "2.57.4",
+    "lucide-react": "0.468.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "7.54.2",
+    "react-router-dom": "7.18.4",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.3.14",
+    "@eslint/js": "9.39.5",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react": "4.3.4",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.39.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "eslint-plugin-react-refresh": "0.4.19",
+    "globals": "16.0.0",
+    "pg": "8.16.3",
+    "postcss": "8.5.28",
+    "prettier": "3.6.2",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.26.0",
+    "vite": "6.4.3",
+    "vitest": "4.1.11"
+  }
+}
